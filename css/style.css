@@ -46,19 +46,21 @@ body{
     display: grid;
     grid-template-columns: repeat(10,1fr);
     aspect-ratio: 1/1;
-    border: solid 2 px black ;
+    border: solid 2px black ;
     
      
 }
 
 .square{
-    border: solid 2 px black ;
+    border: solid 2px black ;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2 rem;
+    font-size: 2rem;
     aspect-ratio: 1/1;
     flex-basis:calc(100%/10);
+    cursor: pointer;
+    user-select: none;
 }
 
 .square.clicked{
