@@ -54,6 +54,7 @@ function clickHandler(event) {
     if(square.classList.contains('bomba')){
         square.classList.add('danger');
         console.log('hai perso');
+        gameOver()
     
     } else{
         punteggio ++
@@ -66,6 +67,10 @@ function resetGame(){
     getSquareElelment.innerHTML = '';
     // reset punteggio
     punteggio = 0 ;
+}
+
+function gameOver(){
+    document.body.innerHTML += `hai totalizzato ${punteggio}punti`
 }
 
 // dobbiamo generare 16 bombe creiamo un aray di nueri casuali compresi tra 1 e 100
